@@ -16,6 +16,8 @@ mad_sec_b = np.sum(np.abs(sec_b - mean_sec_b))/len(sec_b)
 no = [i for i in range(0,6)]
 print(f"MAD of Sec_a and Sec_b is {mad_sec_a} and {mad_sec_b}")
 
+
+# Summary of Mean absolute Deviation which shows sec_a data more consistent as the data are close to mean than the data of sec_b:
 plt.scatter(sec_a, no, label = "sec_a")
 plt.scatter(sec_b, no, color = "red", marker = "*", label = "sec_b")
 plt.plot ([mean_sec_a for i in range(0,6)], [i for i in range(0,6)], color = "yellow", label = "Mean")
